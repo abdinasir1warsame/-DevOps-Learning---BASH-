@@ -16,23 +16,23 @@ The `bash_tasks` folder contains **short practice scripts** to reinforce basic c
 
 Each level represents a challenge I completed, with scripts stored in `bash-battle-arena`. Levels progress from simple commands to advanced automation:
 
-| Level | Script      | Challenge Overview                                                                                                                |
-| ----- | ----------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| 1     | level_1.sh  | Basics: echo, variables, simple flow 🟢                                                                                           |
-| 2     | level_2.sh  | Command-line arguments and parameter handling 📟                                                                                  |
-| 3     | level_3.sh  | File and directory existence checks 📂                                                                                            |
-| 4     | level_4.sh  | Loops: `for` and `while` 🔁                                                                                                       |
-| 5     | level_5.sh  | Conditionals and arithmetic operations ➗                                                                                         |
-| 6     | level_6.sh  | User input with validation ✍️                                                                                                     |
-| 7     | level_7.sh  | Functions basics: defining and calling 🛠️                                                                                         |
-| 8     | level_8.sh  | Functions with parameters 📦                                                                                                      |
-| 9     | level_9.sh  | Directory monitoring and alerts 👀                                                                                                |
-| 10    | level_10.sh | Advanced loops and simple automation 🔄                                                                                           |
-| 11    | level_11.sh | Environment variable handling 🌐                                                                                                  |
-| 12    | level_12.sh | Parsing configuration files 🗃️                                                                                                    |
-| 13    | level_13.sh | Disk usage monitoring and alerts 💾                                                                                               |
-| 14    | level_14.sh | Interactive menu-driven scripts: disk, uptime, users 🎛️                                                                           |
-| 15    | level_15.sh | Capstone challenge: backup rotation, config parsing, cross-platform uptime 🏅 — combines most concepts learned in previous levels |
+| Level | Script      | Challenge Overview                                                           |
+| ----- | ----------- | ---------------------------------------------------------------------------- |
+| 1     | level_1.sh  | Basics: create Arena directory & files, list contents 🟢                     |
+| 2     | level_2.sh  | Variables and loops: output numbers 1–10 📟                                  |
+| 3     | level_3.sh  | Conditional statements: check if file exists 📂                              |
+| 4     | level_4.sh  | File manipulation: copy files, create directories 🔁                         |
+| 5     | level_5.sh  | Boss Battle 1 – Combining Basics: move files, list contents ➗               |
+| 6     | level_6.sh  | Argument parsing: count lines in a file ✍️                                   |
+| 7     | level_7.sh  | File sorting script: sort files by size 🛠️                                   |
+| 8     | level_8.sh  | Multi-file searcher: find terms across log files 📦                          |
+| 9     | level_9.sh  | Script to monitor directory changes 👀                                       |
+| 10    | level_10.sh | Boss Battle 2 – Intermediate Scripting: create files, sort, search 🔄        |
+| 11    | level_11.sh | Automated disk space report 🌐                                               |
+| 12    | level_12.sh | Simple configuration file parser 🗃️                                          |
+| 13    | level_13.sh | Backup script with rotation 💾                                               |
+| 14    | level_14.sh | User-friendly interactive menu: disk, uptime, users 🎛️                       |
+| 15    | level_15.sh | Boss Battle 3 – Advanced Scripting: menu, backup rotation, config parsing 🏅 |
 
 ---
 
@@ -52,16 +52,16 @@ This diagram shows the **progression of challenges** through the Bash Battle Are
 
 ```
 +--------------------+
-| Bash Battle Arena  |
+| Bash Battle Arena |
 +--------------------+
-          |
-          v
+|
+v
 +--------------------+
 | Choose a Level 1-15|
 +--------------------+
-   |   |   |   |   |
-   v   v   v   v   v
-L1  L5  L9  L13 L15
+| | | | |
+v v v v v
+L1 L5 L9 L13 L15
 (Basics) Loops Monitoring Backup Capstone
 ```
 
