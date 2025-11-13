@@ -6,13 +6,13 @@
 
 file="$1"
 
-# Check if argument is missing
+
+
 if [ -z "$file" ]; then
     echo "No file provided"
-# Check if file exists
-elif [ ! -f "$file" ]; then
-    echo "File does not exist"
+elif [ -f "$file" ]; then
+   echo " the number of lines in the file is $(wc -l < "$file") lines"
 else
-   LINE_COUNT=$(wc -l < "$1")
-echo "The file '$1' has $LINE_COUNT lines."
+    echo "Please include a valid file"
 fi
+

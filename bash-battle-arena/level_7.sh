@@ -4,13 +4,17 @@
 
 #Mission: Write a script that sorts all .txt files in a directory by their size, from smallest to largest, and displays the sorted list.
 
-#!/bin/bash
 
-DIRECTORY="Arena"
 
-if [ ! -d "$DIRECTORY" ]; then
-    echo "Directory does not exist."
-    exit 1
+files=("$1"/*.sh)
+
+if [ -z "$1" ]; then
+   echo "dont leave directory path empty"
+   
+elif [ ${#files[@]} -gt 0 ]; then
+   du -b "${files[@]}" | sort -n
+else
+    echo " No .sh files found in $1"
 fi
 
-find "$DIRECTORY" -type f -name "*.txt" -exec ls -lh {} + | sort -k 5,5 -h | awk '{ print $5, $9 }'
+
